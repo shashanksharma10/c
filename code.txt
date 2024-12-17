@@ -1,0 +1,193 @@
+import cv2
+# Load the image
+image = cv2.imread('image.jpg')
+# Display the image
+cv2.imshow('Image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
+import cv2
+# Load the image
+image = cv2.imread('image.jpg')
+# Convert BGR to RGB
+rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+# Display the RGB image
+cv2.imshow('RGB Image', rgb_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+import cv2
+import numpy as np
+# Load the image
+image = cv2.imread('image.jpg', cv2.IMREAD_GRAYSCALE)
+# Find min and max pixel values
+min_val, max_val, _, _ = cv2.minMaxLoc(image)
+print(f"Minimum pixel value: {min_val}, Maximum pixel value: {max_val}")
+
+
+
+import cv2
+# Load the image
+image = cv2.imread('image.jpg')
+# Get the shape of the image
+height, width, channels = image.shape
+print(f"Height: {height}, Width: {width}, Channels: {channels}")
+
+
+
+import matplotlib.pyplot as plt
+items = ['Ordinary bread', 'Fruit Bread', 'Cakes and pastries', 'Biscuits', 'Others']
+sales = [320, 80, 160, 120, 40]
+plt.pie(sales, labels=items, autopct='%1.1f%%', startangle=140)
+plt.title("Sales in a Baker's Shop")
+plt.show()
+
+
+import matplotlib.pyplot as plt
+students = ['Ajay', 'Bali', 'Dipti', 'Faiyaz', 'Geetika', 'Hari']
+marks = [450, 500, 300, 360, 400, 540]
+plt.bar(students, marks, color='blue')
+plt.title('Marks of Students')
+plt.xlabel('Students')
+plt.ylabel('Marks')
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+
+categories = ['Beast Animals', 'Other Land Animals', 'Birds', 'Water Animals', 'Reptiles']
+numbers = [150, 400, 225, 175, 50]
+
+plt.pie(numbers, labels=categories, autopct='%1.1f%%', startangle=140)
+plt.title('Animals in a Zoological Park')
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+activities = ['School', 'Homework', 'Play', 'Sleep', 'Others']
+hours = [7, 4, 2, 8, 3]
+plt.pie(hours, labels=activities, autopct='%1.1f%%', startangle=140)
+plt.title('Time Spent by a Student')
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+religions = ['Hindu', 'Nepali', 'Islam', 'Christian']
+workers = [450, 270, 255, 105]
+plt.pie(workers, labels=religions, autopct='%1.1f%%', startangle=140)
+plt.title('Workers by Religion')
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+religions = ['Hindu', 'Nepali', 'Islam', 'Christian']
+workers = [450, 270, 255, 105]
+plt.pie(workers, labels=religions, autopct='%1.1f%%', startangle=90)
+plt.title("Workers by Religion")
+plt.show()
+
+
+
+total = 0
+while True:
+    num = int(input("Enter a number (0 to stop): "))
+    if num == 0:
+        break
+    total += num
+print("Sum of numbers:", total)
+
+
+
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum:", a + b)
+
+
+
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+x, y = y, x
+print("After swapping: x =", x, "y =", y)
+
+
+
+
+km = float(input("Enter distance in kilometers: "))
+miles = km * 0.621371
+print("Distance in miles:", miles)
+
+
+
+
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+
+
+
+
+radius = float(input("Enter radius of the circle: "))
+area = 3.14159 * radius ** 2
+circumference = 2 * 3.14159 * radius
+print("Area:", area)
+print("Circumference:", circumference)
+
+
+
+principal = float(input("Enter principal amount: "))
+rate = float(input("Enter rate of interest: "))
+time = float(input("Enter time in years: "))
+simple_interest = (principal * rate * time) / 100
+print("Simple Interest:", simple_interest)
+
+
+
+
+marks = []
+for i in range(1, 6):
+    mark = float(input(f"Enter marks for subject {i}: "))
+    marks.append(mark)
+total = sum(marks)
+percentage = total / 5
+print("Total marks:", total)
+print("Percentage:", percentage, "%")
+
+
+
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print(num, "is Even")
+else:
+    print(num, "is Odd")
+
+
+
+
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is not a Leap Year")
+
+
+
+
+
+
+
+
+
+
+
+
+
